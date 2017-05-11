@@ -31,6 +31,9 @@ app.get('/', (request, response) => {
 const renderPage = (urls) => {
 	return `
 		<html>
+		<script>
+			setTimeout(() => { location.reload(); }, 1000 * 60 * 60)
+		</script>
 		<body style="background-color: yellow; overflow: hidden;">
 			<img style="height: 10rem; float: right;" src="http://resources.mynewsdesk.com/image/upload/c_limit,dpr_1.0,f_auto,h_700,q_auto,w_690/dedqeqnhghzdbrcw5pxa.jpg">
 			<div style="width: 100%; margin: 0 auto; display: flex;">
