@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon ./index.js",
     "first-deploy": "NODE_ENV=production claudia create --handler lambda.handler --deploy-proxy-api --region eu-west-1",
-    "deploy": "NODE_ENV=production claudia update --handler lambda --set-env USER_ID=,API_KEY=,NODE_ENV="
+    "deploy": "NODE_ENV=production claudia update --handler lambda --set-env USER_ID=150531487@N08,API_KEY=,NODE_ENV=production"
   },
   "author": "",
   "license": "ISC",

@@ -18,4 +18,4 @@ Run `npm run first-deploy`.
 That will deploy the lambda and create a API Gateway. It will also create a file called `claudia.json`. Check that file in to the repo.
 
 Next deploys:
-Fill in the correct config in `package.json` script. The run `npm run deploy`.
+Fill in api_key in `package.json` deploy script. The run `npm run deploy`.
