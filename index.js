@@ -31,7 +31,7 @@ app.get('/', (request, response) => {
 const renderPage = (urls) => {
 	return `
 		<html>
-		<body style="background-color: yellow; overflow:hidden;">
+		<body style="background-color: yellow; overflow: hidden;">
 			<img style="height: 10rem; float: right;" src="http://resources.mynewsdesk.com/image/upload/c_limit,dpr_1.0,f_auto,h_700,q_auto,w_690/dedqeqnhghzdbrcw5pxa.jpg">
 			<div style="width: 100%; margin: 0 auto; display: flex;">
 				${ getImages(urls) }
@@ -41,13 +41,13 @@ const renderPage = (urls) => {
 };
 const getImages = (urls) => {
 	return `
-		<div style="padding-right: .5rem;">
+		<div style="padding-right: .5rem; width: 100%;">
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[0] }>
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[1] }>
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[2] }>
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[3] }>
 		</div>
-		<div>
+		<div style="padding-right: .5rem; width: 100%;">
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[4] }>
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[5] }>
 			<img style="width: 100%; padding-bottom: .5rem;" src=${ urls[6] }>
