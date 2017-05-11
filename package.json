@@ -4,16 +4,20 @@
   "description": "image-feed",
   "main": "index.js",
   "scripts": {
-    "dev": "nodemon ./index.js"
+    "dev": "nodemon ./index.js",
+    "first-deploy": "NODE_ENV=production claudia create --handler lambda.handler --deploy-proxy-api --region eu-west-1",
+    "deploy": "NODE_ENV=production claudia update --handler lambda --set-env USER_ID=,API_KEY=,NODE_ENV="
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "aws-serverless-express": "^2.2.0",
     "dotenv": "^4.0.0",
     "express": "^4.15.2",
     "node-fetch": "^1.6.3"
   },
   "devDependencies": {
+    "claudia": "^2.12.1",
     "nodemon": "^1.11.0"
   }
 }

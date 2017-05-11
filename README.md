@@ -12,5 +12,10 @@ Will start and watch a server on `localhost:8000`.
 Create a file called `.env`. Use `.env-template` as inpiration.
 
 # Deploy
-Make sure your aws credentials file are correct. Run `npm run deploy`.
-First time it will create a file called claudia.json. Make sure to check it in.
+Make sure your aws credentials file are correct.
+First time deploy.
+Run `npm run first-deploy`.
+That will deploy the lambda and create a API Gateway. It will also create a file called `claudia.json`. Check that file in to the repo.
+
+Next deploys:
+Fill in the correct config in `package.json` script. The run `npm run deploy`.
